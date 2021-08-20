@@ -1,5 +1,5 @@
 # SpringBootMultiDataSource
-## 背景
+## 简介
 本项目为Demo项目，主要包含如下两个模块：
 * nonjta-jpa
 * jta-jpa  
