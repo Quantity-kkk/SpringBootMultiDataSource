@@ -1,0 +1,63 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    common: &ds_common
+      xa-data-source-class-name: com.mysql.cj.jdbc.MysqlXADataSource
+      test-query: select 1
+      min-pool-size: 5
+      max-pool-size: 20
+#     单位是秒
+      max-idle-time: 60
+      max-lifetime: 30
+      login-timeout: 15
+      borrow-connection-timeout: 30
+
+    main:
+      <<: *ds_common
+      unique-resource-name: mainDataSource
+      xa-properties:
+#       在xa-properties中配置pinGlobalTxToPhysicalConnection，保证xid传递
+        pinGlobalTxToPhysicalConnection: true
+        url: jdbc:mysql:///main?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
+        user: root
+        password: root
+
+    slave:
+      <<: *ds_common
+      unique-resource-name: slaveDataSource
+      xa-properties:
+        pinGlobalTxToPhysicalConnection: true
+        url: jdbc:mysql:///slave?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
+        user: root
+        password: root
+
+
+  jpa:
+    common: &jpa_common
+      show-sql: true
+      generate-ddl: true
+      properties:
+        hibernate:
+          hbm2ddl:
+            auto: update
+    mysql:
+      <<: *jpa_common
+      database: mysql
+#      指定此方言，确保数据库使用的引擎为innodb，支持事务操作。
+      database-platform: org.hibernate.dialect.MySQL57Dialect
+
+  jta:
+    enabled: true
+
+logging:
+  file:
+    path: D:\cstc\logs\audit-collect
+#    调试所需
+#  level:
+#    org:
+#      hibernate: trace
+
+server:
+  port: 8888
