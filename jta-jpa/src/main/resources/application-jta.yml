@@ -53,7 +53,7 @@ spring:
 
 logging:
   file:
-    path: D:\cstc\logs\audit-collect
+    path: D:\demo\logs\multi-datasource
 #    调试所需
 #  level:
 #    org:
