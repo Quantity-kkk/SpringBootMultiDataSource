@@ -18,7 +18,7 @@ jta-jpa则在nonjta基础上引入了jta-atomikos，并编写了demo测试不同
 
 **jta-jpa**
 * springboot 2.3.2.RELEASE 
-* AtomikosDataSource springboot自带数据库连接池 
+* AtomikosDataSource 数据库连接池 
 * jdbcTemplate 跟随springboot版本
 * jpa 跟随springboot版本
 * jta Atomikos
