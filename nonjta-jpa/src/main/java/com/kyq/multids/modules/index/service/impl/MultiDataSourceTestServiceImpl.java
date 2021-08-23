@@ -27,8 +27,6 @@ import java.util.Map;
  * 注意，因为本项目有着多个transactionManager各自管理各自的数据库，
  *      nonjta项目的MultiDataSourceTestServiceImpl是没有在class上添加@Transactional的。
  *
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

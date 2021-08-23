@@ -5,8 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Description： com.kyq.multids
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

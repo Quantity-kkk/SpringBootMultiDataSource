@@ -15,8 +15,6 @@ import javax.transaction.UserTransaction;
 
 /**
  * Description： com.kyq.multids.config
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

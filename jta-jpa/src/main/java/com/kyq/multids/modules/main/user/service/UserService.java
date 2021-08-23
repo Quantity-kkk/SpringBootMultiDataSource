@@ -2,8 +2,6 @@ package com.kyq.multids.modules.main.user.service;
 
 /**
  * Description： com.kyq.multids.modules.main.user.service
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

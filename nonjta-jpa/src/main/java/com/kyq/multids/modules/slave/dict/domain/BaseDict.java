@@ -14,8 +14,6 @@ import java.util.Set;
 
 /**
  * Description： com.kyq.multids.modules.slave.dict.domain
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

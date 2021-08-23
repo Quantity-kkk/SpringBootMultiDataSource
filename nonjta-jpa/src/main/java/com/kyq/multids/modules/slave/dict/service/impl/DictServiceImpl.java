@@ -13,8 +13,6 @@ import java.util.UUID;
 
 /**
  * Description： com.kyq.multids.modules.slave.dict.service.impl
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0

@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Description： com.kyq.multids.modules.main.user.repository
- * CopyRight:  © 2015 CSTC. All rights reserved.
- * Company: cstc
  *
  * @author kyq1024
  * @version 1.0
